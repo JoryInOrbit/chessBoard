@@ -1,0 +1,125 @@
+body{
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header, footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    position: relative;
+    left: 0;
+}
+header{
+    top: 0;
+    margin-bottom: 75px;
+}
+footer{
+    bottom: 0;
+    margin-top: 75px;
+}
+#headerTitle{
+    font-size: 35px;
+}
+#footerTitle{
+    font-size: 20px;
+}
+#headerTitle, #footerTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgb(50, 50, 50);
+
+}
+#content{
+    display: grid;
+    grid-template-areas: 
+    "customization board emptySpace";
+    grid-template-columns: 35vw 55vw 5vw;
+    justify-items: center;
+    align-items: center;
+}
+#customization{
+    grid-area: customization;
+    display: grid;
+    grid-template-areas: 
+    "customizationLabel customizationLabel customizationLabel"
+    "colorLabel colorLabel colorLabel"
+    "greenButton brownButton greyButton";
+    gap: 15px;
+    padding-left: 5vw;
+}
+#customizationLabel{
+    grid-area: customizationLabel;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+#colorLabel{
+    grid-area: colorLabel;
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.colorButton{
+    border: none;
+    color: white;
+    height: 50px;
+    width: 115px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.colorButton:hover{
+    transform: scale(1.1); 
+}
+.colorButton:active{
+    transform: scale(1);
+}
+#greenButton{
+    grid-area: greenButton;
+    background-color: #48a54e;
+}
+#brownButton{
+    grid-area: brownButton;
+    background-color: #75533a;
+}
+#greyButton{
+    grid-area: greyButton;
+    background-color: #747474;
+}
+.activeColor{
+    border: 3px solid black;
+}
+#chessBoard{
+    grid-area: board;
+    display: flex;
+    flex-direction: row;
+    border: 4px solid black;
+}
+.square{
+    width: 80px;
+    height: 80px;
+}
+.coloredSquare{
+    background-color: #359b3c;
+}
+.whiteSquare{
+    background-color: white;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 75px;
+}

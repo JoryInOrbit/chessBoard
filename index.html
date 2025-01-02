@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <link rel="icon" href="iconFigures.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="headerTitle">Chess Board</p>
+    </header>
+
+    <div id="content">
+        <div id="customization">
+            <p id="customizationLabel">Customization Menu</p>
+            <p id="colorLabel">Choose Board Color</p>
+            <button id="greenButton" class="colorButton activeColor" data-color="#48a54e">Green</button>
+            <button id="brownButton" class="colorButton" data-color="#75533a">Brown</button>
+            <button id="greyButton" class="colorButton" data-color="#747474">Grey</button>
+        </div>
+
+        <div id="chessBoard"></div>
+    </div>
+
+    <footer>
+        <p id="footerTitle">A colorful chess board by JoryInOrbit 2025</p>
+    </footer>
+    
+    <script src="logic.js"></script>
+</body>
+</html>
